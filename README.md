@@ -4,7 +4,7 @@ Unofficial PHP Wrapper for ActiveCampaign API v3.
 
 ## Installation:
 ```
-composer require mediatoolkit/activecampaign-v3-php
+composer require crazyfactory/activecampaign-v3-php
 ```
 
 ## Basic usage:

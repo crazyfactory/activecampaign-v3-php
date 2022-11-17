@@ -1,13 +1,13 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Deals;
+namespace CrazyFactory\ActiveCampaignClient\Deals;
 
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class Deals
- * @package Mediatoolkit\ActiveCampaign\Deals
+ * @package CrazyFactory\ActiveCampaignClient\Deals
  * @see https://developers.activecampaign.com/reference#deal
  */
 class Deals extends Resource

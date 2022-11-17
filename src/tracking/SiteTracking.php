@@ -1,12 +1,12 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Tracking;
+namespace CrazyFactory\ActiveCampaignClient\Tracking;
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class SiteTracking
- * @package Mediatoolkit\ActiveCampaign\Tracking
+ * @package CrazyFactory\ActiveCampaignClient\Tracking
  * @see https://developers.activecampaign.com/reference#site-tracking
  */
 class SiteTracking extends Resource

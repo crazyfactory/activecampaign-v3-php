@@ -1,12 +1,12 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Contacts;
+namespace CrazyFactory\ActiveCampaignClient\Contacts;
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class Contacts
- * @package Mediatoolkit\ActiveCampaign\Contacts
+ * @package CrazyFactory\ActiveCampaignClient\Contacts
  * @see https://developers.activecampaign.com/reference#contact
  */
 class Contacts extends Resource

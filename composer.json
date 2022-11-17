@@ -1,5 +1,5 @@
 {
-  "name": "mediatoolkit/activecampaign-v3-php",
+  "name": "crazyfactory/activecampaign-v3-php",
   "description": "PHP Wrapper for ActiveCampaign",
   "require": {
     "guzzlehttp/guzzle": "~6.3"
@@ -16,12 +16,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Mediatoolkit\\ActiveCampaign\\": "src/"
+      "CrazyFactory\\ActiveCampaignClient\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mediatoolkit\\Tests\\": "tests/"
+      "CrazyFactory\\Tests\\": "tests/"
     }
   }
 }

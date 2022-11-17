@@ -1,13 +1,13 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Lists;
+namespace CrazyFactory\ActiveCampaignClient\Lists;
 
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class Lists
- * @package Mediatoolkit\ActiveCampaign\Lists
+ * @package CrazyFactory\ActiveCampaignClient\Lists
  * @see https://developers.activecampaign.com/reference#lists
  */
 class Lists extends Resource

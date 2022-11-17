@@ -1,12 +1,12 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Tags;
+namespace CrazyFactory\ActiveCampaignClient\Tags;
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class Tags
- * @package Mediatoolkit\ActiveCampaign\Tags
+ * @package CrazyFactory\ActiveCampaignClient\Tags
  * @see https://developers.activecampaign.com/reference#tags
  */
 class Tags extends Resource

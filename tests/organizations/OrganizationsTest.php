@@ -5,11 +5,11 @@
  * Time: 15:18
  */
 
-namespace Mediatoolkit\Tests\Organizations;
+namespace CrazyFactory\Tests\Organizations;
 
 
-use Mediatoolkit\ActiveCampaign\Organizations\Organizations;
-use Mediatoolkit\Tests\ResourceTestCase;
+use CrazyFactory\ActiveCampaignClient\Organizations\Organizations;
+use CrazyFactory\Tests\ResourceTestCase;
 
 class OrganizationsTest extends ResourceTestCase
 {

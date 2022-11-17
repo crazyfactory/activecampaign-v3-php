@@ -5,11 +5,11 @@
  * Time: 17:01
  */
 
-namespace Mediatoolkit\Tests\Tracking;
+namespace CrazyFactory\Tests\Tracking;
 
 
-use Mediatoolkit\ActiveCampaign\Tracking\EventTracking;
-use Mediatoolkit\Tests\ResourceTestCase;
+use CrazyFactory\ActiveCampaignClient\Tracking\EventTracking;
+use CrazyFactory\Tests\ResourceTestCase;
 
 class EventTrackingTest extends ResourceTestCase
 {

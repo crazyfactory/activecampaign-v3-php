@@ -1,12 +1,12 @@
 <?php
 
-namespace Mediatoolkit\ActiveCampaign\Organizations;
+namespace CrazyFactory\ActiveCampaignClient\Organizations;
 
-use Mediatoolkit\ActiveCampaign\Resource;
+use CrazyFactory\ActiveCampaignClient\Resource;
 
 /**
  * Class Organizations
- * @package Mediatoolkit\ActiveCampaign\Organizations
+ * @package CrazyFactory\ActiveCampaignClient\Organizations
  * @see https://developers.activecampaign.com/reference#organizations
  */
 class Organizations extends Resource

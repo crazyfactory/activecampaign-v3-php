@@ -1,9 +1,9 @@
 <?php
 
-namespace Mediatoolkit\Tests\Contacts;
+namespace CrazyFactory\Tests\Contacts;
 
-use Mediatoolkit\ActiveCampaign\Contacts\Contacts;
-use Mediatoolkit\Tests\ResourceTestCase;
+use CrazyFactory\ActiveCampaignClient\Contacts\Contacts;
+use CrazyFactory\Tests\ResourceTestCase;
 
 class ContactsTest extends ResourceTestCase
 {

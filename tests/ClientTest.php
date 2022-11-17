@@ -1,9 +1,9 @@
 <?php
 
-namespace Mediatoolkit\Tests;
+namespace CrazyFactory\Tests;
 
 
-use Mediatoolkit\ActiveCampaign\Client;
+use CrazyFactory\ActiveCampaignClient\Client;
 
 class ClientTest extends ResourceTestCase
 {
