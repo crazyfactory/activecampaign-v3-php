@@ -142,8 +142,23 @@ class Contacts extends Resource
     }
 
     /**
+     * Retrieve contact's tags
+     *
+     * @param int $id
+     * @return string
+     */
+    public function retrieveContactTags(int $id): string
+    {
+        $req = $this->client
+            ->getClient()
+            ->get('/api/3/contacts/' . $id . '/contactTags');
+
+        return $req->getBody()->getContents();
+    }
+
+    /**
      * Add a tag to contact
-     * @see https://developers.activecampaign.com/reference#create-contact-tag
+     * @see https://developers.activecampaign.com/reference/create-contact-tag
      *
      * @param int $id
      * @param int $tag_id
@@ -261,6 +276,40 @@ class Contacts extends Resource
         $req = $this->client
             ->getClient()
             ->get('/api/3/fieldValues/' . $field_id);
+
+        return $req->getBody()->getContents();
+    }
+
+    /**
+     * @param int    $id
+     * @param string $custom_field_id
+     * @return string|null
+     */
+    public function retrieveContactFieldValue(int $id, string $custom_field_id): ?string
+    {
+        $content = $this->retrieveContactFieldValues($id);
+
+        $field_list = array_column(
+            json_decode($content, true)['fieldValues'],
+            'value',
+            'field'
+        );
+
+        return $field_list[$custom_field_id] ?? null;
+    }
+
+    /**
+     * Retrieve contact's field values
+     * @see https://developers.activecampaign.com/reference/retrieve-contact-field-values
+     *
+     * @param int $id
+     * @return string
+     */
+    public function retrieveContactFieldValues(int $id): string
+    {
+        $req = $this->client
+            ->getClient()
+            ->get('/api/3/contacts/' . $id . '/fieldValues');
 
         return $req->getBody()->getContents();
     }
