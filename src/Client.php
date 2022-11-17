@@ -51,21 +51,32 @@ class Client
      */
     private $event_tracking_client;
 
-    public function __construct($api_url, $api_token, $event_tracking_actid = null, $event_tracking_key = null)
+    /**
+     * @param \GuzzleHttp\ClientInterface $http_client
+     * @param string $api_url Not required if `$http_client` is provided
+     * @param string $api_token Not required if `$http_client` is provided
+     * @param string $event_tracking_actid
+     * @param string $event_tracking_key
+     */
+    public function __construct($http_client = null, $api_url = "", $api_token = "", $event_tracking_actid = null, $event_tracking_key = null)
     {
         $this->api_url = $api_url;
         $this->api_token = $api_token;
         $this->event_tracking_actid = $event_tracking_actid;
         $this->event_tracking_key = $event_tracking_key;
 
-        $this->client = new \GuzzleHttp\Client([
-            'base_uri' => $this->api_url,
-            'headers' => [
-                'User-Agent' => self::LIB_USER_AGENT,
-                self::HEADER_AUTH_KEY => $this->api_token,
-                'Accept' => 'application/json'
-            ]
-        ]);
+        if (is_null($http_client)) {
+            $this->client = new \GuzzleHttp\Client([
+                'base_uri' => $this->api_url,
+                'headers' => [
+                    'User-Agent' => self::LIB_USER_AGENT,
+                    self::HEADER_AUTH_KEY => $this->api_token,
+                    'Accept' => 'application/json'
+                ]
+            ]);
+        } else {
+            $this->client = $http_client;
+        }
 
         if (!is_null($this->event_tracking_actid) && !is_null($this->event_tracking_key)) {
             $this->event_tracking_client = new \GuzzleHttp\Client([
