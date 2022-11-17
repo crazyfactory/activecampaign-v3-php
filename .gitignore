@@ -1,4 +1,5 @@
 .idea
+auth.json
 /vendor/
 /tests/bootstrap.php
 /composer.lock
